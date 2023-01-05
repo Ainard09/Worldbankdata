@@ -51,7 +51,8 @@ def return_figures():
   # as a line chart
 
     graph_one = []
-    df = cleandata('data/API_AG.LND.ARBL.HA.PC_DS2_en_csv_v2.csv')
+    df = cleandata(
+        'home/azeez/webapp_worldbank/dataAPI_AG.LND.ARBL.HA.PC_DS2_en_csv_v2.csv')
     df.columns = ['country', 'year', 'hectaresarablelandperperson']
     df.sort_values('hectaresarablelandperperson',
                    ascending=False, inplace=True)
@@ -78,7 +79,7 @@ def return_figures():
 
 # second chart plots rural population for 2015 as a bar chart
     graph_two = []
-    df_two = cleandata('data/API_SP.RUR.TOTL_DS2_en_csv_v2_9914824.csv',
+    df_two = cleandata('home/azeez/webapp_worldbank/dataAPI_SP.RUR.TOTL_DS2_en_csv_v2_9914824.csv',
                        ['Country Name', '2015'], ['2015'])
 
     df_two.columns = ['country', 'year', 'ruralpopulation']
@@ -98,7 +99,8 @@ def return_figures():
 
 # third chart plots percent of population that is rural from 1990 to 2015
     graph_three = []
-    df = cleandata('data/API_SP.RUR.TOTL.ZS_DS2_en_csv_v2_9948275.csv')
+    df = cleandata(
+        'home/azeez/webapp_worldbank/dataAPI_SP.RUR.TOTL.ZS_DS2_en_csv_v2_9948275.csv')
     df.columns = ['country', 'year', 'percentrural']
     df.sort_values('percentrural', ascending=False, inplace=True)
     for country in countrylist:
@@ -127,9 +129,9 @@ def return_figures():
     keepcolumns.insert(0, 'Country Name')
 
     df_one = cleandata(
-        'data/API_SP.RUR.TOTL_DS2_en_csv_v2_9914824.csv', keepcolumns, valuevariables)
+        'home/azeez/webapp_worldbank/dataAPI_SP.RUR.TOTL_DS2_en_csv_v2_9914824.csv', keepcolumns, valuevariables)
     df_two = cleandata(
-        'data/API_AG.LND.FRST.K2_DS2_en_csv_v2_9910393.csv', keepcolumns, valuevariables)
+        'home/azeez/webapp_worldbank/dataAPI_AG.LND.FRST.K2_DS2_en_csv_v2_9910393.csv', keepcolumns, valuevariables)
 
     df_one.columns = ['country', 'year', 'variable']
     df_two.columns = ['country', 'year', 'variable']
