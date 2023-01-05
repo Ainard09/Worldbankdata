@@ -23,4 +23,4 @@ To run it locally, run myapp.py in your shell. However, the coded has been moder
 
 ## Acknowledgements
 
-Special thank to [world bank](https://data.worldbank.org/) for their effort to make this dataset available. I won't go without giving appreciation to [Udacity](https://www.udacity.com)
+Special thanks to [world bank](https://data.worldbank.org/) for their effort to make this dataset available. I won't go without giving appreciation to [Udacity](https://www.udacity.com)
