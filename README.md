@@ -19,7 +19,7 @@ The dataset provided by worldbank gives an insightful exploration of land use in
 
 ## Usage
 
-To run it locally, run myapp.py in your shell. However, the coded has been moderately modify to meet the Pythonanywhere requirements and file path. You can view the web page by visiting [here](http://ainard09.pythonanywhere.com/)
+To run it locally, run myapp.py in your shell. However, the coded has been moderately modified to meet the Pythonanywhere requirements and file path. You can view the web page by visiting [here](http://ainard09.pythonanywhere.com/)
 
 ## Acknowledgements
 
